@@ -1,0 +1,34 @@
+<div class="layout">
+    <nav>
+        <div class="nav-wrapper container">
+            <a [routerLink]="['/']" class="brand-logo">
+                #workfromhome
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="#" class="snipcart-checkout">
+                        View cart
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container layout__content">
+        <header>
+            <h1>
+                {{ title }}
+            </h1>
+        </header>
+
+        <main class="layout__content">
+            <ng-content></ng-content>
+        </main>
+    </div>
+    
+    <nav>
+        <footer class="nav-wrapper container layout__footer">
+            Made with 💓 with <a href="https://scully.io">Scully</a> & <a href="https://snipcart.com">Snipcart</a>.
+        </footer>
+    </nav>
+</div>

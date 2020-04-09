@@ -1,0 +1,9 @@
+<app-layout [title]="product.name" *ngIf="product">
+    <div class="actions">
+        <a [routerLink]="['/']" class="actions__link">Products</a>
+        <span class="actions__separator">➡</span>
+        <span>{{ product.name }}</span>
+    </div>
+    <app-product-card [showBuyButton]="true" type="horizontal" [product]="product">
+    </app-product-card>
+</app-layout>

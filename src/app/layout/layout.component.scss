@@ -1,0 +1,8 @@
+.layout {
+    &__content {
+        min-height: calc(100vh - 64px - 200px);
+    }
+    &__footer {
+        text-align: center;
+    }
+}

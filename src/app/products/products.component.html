@@ -1,0 +1,16 @@
+<app-layout title="Build your home office">
+    <p>
+        Here, you'll find everything you need to build a good looking and functional home office.
+    </p>
+
+    <h3>
+        Products
+    </h3>
+
+    <div class="products-list">
+        <div *ngFor="let product of products$ | async" class="products-list__item">
+            <app-product-card  [product]="product">
+            </app-product-card>
+        </div>
+    </div>
+</app-layout>

@@ -1,0 +1,20 @@
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        padding: 24px;
+        width: 100%;
+
+        @media (min-width: $breakpoint-tablet) {
+            width: 50%;
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            width: 33%;
+        }
+    }
+}
