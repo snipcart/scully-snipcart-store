@@ -20,7 +20,7 @@ export class ProductsService {
   constructor(private http: HttpClient) { }
 
   getProducts() {
-    return this.http.get<Product[]>('https://scully-snipcart-api.netlify.com/products.json');
+    return this.http.get<Product[]>('https://scully-snipcart-api.netlify.app/products.json');
   }
 
   getProductById(id: string): Observable<Product | null> {

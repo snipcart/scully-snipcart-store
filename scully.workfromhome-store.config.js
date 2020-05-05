@@ -6,7 +6,7 @@ exports.config = {
     '/products/:productId': {
         type: 'json',
         productId: {
-            url: 'https://scully-snipcart-api.netlify.com/products.json',
+            url: 'https://scully-snipcart-api.netlify.app/products.json',
             property: 'id'
         }
     }
