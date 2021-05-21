@@ -1,4 +1,6 @@
-exports.config = {
+import { ScullyConfig } from "@scullyio/scully";
+
+export const config: ScullyConfig = {
   projectRoot: "./src",
   projectName: "workfromhome-store",
   outDir: './dist/static',
