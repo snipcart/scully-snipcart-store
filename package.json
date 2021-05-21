@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "scully": "scully",
-    "scully:serve": "scully serve",
+    "scully": "npx scully --",
+    "scully:serve": "npx scully serve --",
     "scully:build": "ng build && scully --scanRoutes --nw"
   },
   "private": true,
